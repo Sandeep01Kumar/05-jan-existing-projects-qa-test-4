@@ -1,5 +1,0 @@
-# Node.js dependency install artifact (reproducible via `npm ci` from package-lock.json)
-node_modules/
-
-# npm debug/log output
-npm-debug.log*
