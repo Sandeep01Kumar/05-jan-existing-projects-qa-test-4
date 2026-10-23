@@ -7,6 +7,7 @@ const app = express();
 app.all('/', (req, res) => res.type('text/plain').send('Hello, World!\n'));
 app.get('/good-evening', (req, res) => res.type('text/plain').send('Good evening\n'));
 
-app.listen(port, hostname, () => {
+app.listen(port, hostname, (err) => {
+  if (err) throw err;
   console.log(`Server running at http://${hostname}:${port}/`);
 });
